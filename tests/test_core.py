@@ -33,7 +33,7 @@ def test_colocalization_known_and_constants():
     result = colocalization_metrics(a,b,threshold_a=2,threshold_b=2)
     assert result["pearson"] == pytest.approx(1)
     assert result["manders_m1"] == pytest.approx(1)
-    assert colocalization_metrics(np.ones((2,2)), b)["pearson"] is None
+    assert colocalization_metrics(np.ones_like(b), b)["pearson"] is None
     assert len(threshold_sensitivity(a,b,[2,5],[2])) == 2
 
 
