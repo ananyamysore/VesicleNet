@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# VesicleNet generated outputs
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+example-output/
+vesiclenet-results/
